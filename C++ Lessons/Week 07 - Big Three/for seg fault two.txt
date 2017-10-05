@@ -1,0 +1,39 @@
+//A custom string class that allocates mem to hold
+//a string that we can pass in. Note without a customized
+//copy constructor or assignment operator C++ will
+//provide defaults that shallow copy
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <sstream>
+#include <string>
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+class MyString
+{
+private: 
+	char *pchString; //this needs to be deep copied
+	int nLength; //this may be shallow copied
+public:
+	~MyString();//custom destructor
+	MyString(const MyString& cSource);//custom copy constructor
+	MyString& operator = (const MyString& cSource);//custom copy assignment operator
+	
+	string getString()
+	{
+		string s(this->pchString);//use of built in conversion from char* to string
+		return s;
+	}
+	int GetLength(){ return this->nLength; }
+
+	MyString(char *pchString = "")//constructor with args
+	{
+		nLength = strlen(pchString) + 1;//get str len + terminator
+		this->pchString = new char[nLength];//create buffer of that length
+		strncpy(this->pchString,pchString, nLength);//copy into buffer
+		this->pchString[nLength - 1] = '\0';//terminate string
+	}
+
+	
+};//end class

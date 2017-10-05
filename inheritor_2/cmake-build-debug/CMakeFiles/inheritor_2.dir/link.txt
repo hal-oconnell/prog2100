@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/inheritor_2.dir/main.cpp.o CMakeFiles/inheritor_2.dir/animal.cpp.o CMakeFiles/inheritor_2.dir/fish.cpp.o CMakeFiles/inheritor_2.dir/cat.cpp.o CMakeFiles/inheritor_2.dir/human.cpp.o  -o inheritor_2 

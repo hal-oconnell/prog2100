@@ -1,0 +1,74 @@
+//Topic: Arrays 1D,2D, array args, identifiers
+//Note 1: passing arrays in C++ by value is not possible.
+//You may instead use a vector. 
+//Note 2: for clarity, use pointer notation when 
+//passing an array
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+//prototypes
+void addTen(int *p, int);
+
+int main()
+{
+	//1D Array solution
+	//int a[3]; //declare and empty array
+	//a[0] = 0;
+	//a[1] = 1;
+	//a[2] = 2;
+
+	//int b[] = { 0, 1, 2 };//declare and fill at same time
+
+	//for (int row = 0; row < 3; row++)
+	//{
+	//	cout << b[row] << endl;
+	//}
+	//_getch();
+
+	//2D Array Example
+	//int my2Darray[][3] = { { 0, 100, 200 }, { 1, 300, 400 }, {2,500,600} };
+	//for (int row = 0; row < 3; row++){
+	//	for (int col = 0; col < 3; col++){
+	//		cout << my2Darray[row][col];
+	//		if (col < 2)
+	//			cout << ", ";
+	//		else
+	//			cout << endl;
+	//	}
+	//}
+	//_getch();
+	
+	//Arrays and pointers Example
+	int a[] = { 1, 2, 3 };
+	int *p; 
+	p = a; //make pointer point to array. Notice we did not use &
+
+	//addTen(a, 3);//call sending array name and size
+	addTen(p, 3);//call sending pointer to array and size
+	for (int row = 0; row < 3; row++)
+	{
+		cout << a[row] << endl;
+	}
+
+	_getch();
+	return 0;
+}
+
+//method definitions
+//void addTen(int a[], int size)//array passed using array argument
+//{
+//	for (int row = 0; row < 3; row++)
+//	{
+//		a[row] += 10;
+//	}
+//}
+
+void addTen(int *p,int size)//array passed by pointer
+{
+	for (int row = 0; row < 3; row++)
+	{
+		p[row] += 10;
+	}
+}

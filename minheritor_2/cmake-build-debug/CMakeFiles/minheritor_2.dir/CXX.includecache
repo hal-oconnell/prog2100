@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prog2100/C++ Projects/minheritor_2/animal.cpp
+iostream
+-
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+iostream
+-
+
+/home/prog2100/C++ Projects/minheritor_2/cat.cpp
+iostream
+-
+cat.h
+/home/prog2100/C++ Projects/minheritor_2/cat.h
+
+/home/prog2100/C++ Projects/minheritor_2/cat.h
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+mammal.h
+/home/prog2100/C++ Projects/minheritor_2/mammal.h
+
+/home/prog2100/C++ Projects/minheritor_2/fish.cpp
+fish.h
+/home/prog2100/C++ Projects/minheritor_2/fish.h
+
+/home/prog2100/C++ Projects/minheritor_2/fish.h
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+
+/home/prog2100/C++ Projects/minheritor_2/human.cpp
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+human.h
+/home/prog2100/C++ Projects/minheritor_2/human.h
+
+/home/prog2100/C++ Projects/minheritor_2/human.h
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+mammal.h
+/home/prog2100/C++ Projects/minheritor_2/mammal.h
+
+/home/prog2100/C++ Projects/minheritor_2/main.cpp
+iostream
+-
+animal.h
+/home/prog2100/C++ Projects/minheritor_2/animal.h
+cat.h
+/home/prog2100/C++ Projects/minheritor_2/cat.h
+fish.h
+/home/prog2100/C++ Projects/minheritor_2/fish.h
+human.h
+/home/prog2100/C++ Projects/minheritor_2/human.h
+
+/home/prog2100/C++ Projects/minheritor_2/mammal.cpp
+mammal.h
+/home/prog2100/C++ Projects/minheritor_2/mammal.h
+
+/home/prog2100/C++ Projects/minheritor_2/mammal.h
+iostream
+-
+

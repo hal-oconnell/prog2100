@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/quickarray.dir/main.cpp.o  -o quickarray 

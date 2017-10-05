@@ -1,0 +1,4 @@
+/home/prog2100/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/prog2100/C++ Projects/inheritor_2"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/prog2100/C++ Projects/inheritor_2/cmake-build-debug

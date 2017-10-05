@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prog2100/C++ Projects/Hanoi1/Hanoi1.cpp
+iostream
+-
+stdlib.h
+-
+vector
+-
+algorithm
+-
+

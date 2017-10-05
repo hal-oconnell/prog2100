@@ -1,0 +1,47 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+//method prototypes
+void oneDexample();
+void twoDexample();
+void mod1Darray(int *p, int);
+void mod2Darray(int p[][3], int, int);
+
+int main()
+{
+	oneDexample();//passing 1D array to method
+	//twoDexample();
+	return 0;
+}
+
+void oneDexample()
+{
+	int numArray[] = { 1, 2, 3, 4, 5 };
+	//int sizeOfNumArray = sizeof(numArray);//20 as int 40 as double
+	//int sizeOfNumArray = sizeof(numArray) / sizeof(numArray[0]);
+	int sizeOfNumArray = sizeof(numArray) / sizeof(int);
+	//cout << sizeOfNumArray;
+	
+	cout << "1D array before modification" << endl;
+	for (int row = 0; row < sizeOfNumArray; row++)
+	{
+		cout << numArray[row] << endl;
+	}
+	cout << "1D array after modification" << endl;
+	mod1Darray(numArray,sizeOfNumArray);
+	for (int row = 0; row < sizeOfNumArray; row++)
+	{
+		cout << numArray[row] << endl;
+	}
+	_getch();
+
+}//end oneDexample
+
+void mod1Darray(int *p, int size)
+{
+	for (int row = 0; row < size; row++)
+	{
+		p[row] += 10;
+	}
+}

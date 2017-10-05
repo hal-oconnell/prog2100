@@ -1,0 +1,3 @@
+/home/hal/Projects/C++ Projects/fileio/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hal/Projects/C++ Projects/fileio/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hal/Projects/C++ Projects/fileio/cmake-build-debug/CMakeFiles/fileio.dir

@@ -1,0 +1,7 @@
+//A type alias is a different name by which a type can be identified.
+//C++ supports two ways of doing this - typedef and using.
+//The purpose of typedef is to form complex types from more-basic machine types
+//and assign simpler names to such combinations. They are most often used when 
+//a standard declaration is cumbersome, potentially confusing, or likely to 
+//vary from one implementation to another.
+//http://www.cplusplus.com/doc/tutorial/other_data_types/

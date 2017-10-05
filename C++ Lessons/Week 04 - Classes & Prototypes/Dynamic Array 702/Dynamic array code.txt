@@ -1,0 +1,79 @@
+//Topic: dynamic arrays, use of const modifier
+
+#include <iostream>
+#include <conio.h>
+#include <string>
+using namespace std;
+
+int main(){
+	//int x = 10;//not a const
+	//const int x = 10;// works
+	//int myArray[x];//fixed size declaration
+	//int const SIZE = 10;
+	//cout << "Enter array size: " << endl;
+	////cin >> size;
+
+	//int myArray[size];//error - must be const
+	//int myArray[SIZE];//works
+
+	//const int MAX = 5;
+	//int nonD[MAX];//non dynamic declaration of an array
+	//int c = 0;
+	////nonD[0] = 3;//assign int to array at [0]
+	////cout << nonD[0] << endl; //result is 3
+
+	////read into above array
+	//cout << "Enter an integer: " << endl;
+	////nonD[0] = cin.get();
+	////cout << nonD[0] << endl;
+	////_getch();
+
+	//while (cin >> nonD[c])//go while more input
+	//{
+	//	c++;
+	//	if (c < 5)
+	//		cout << c << " elements used" << " max is: " << MAX << endl;
+	//	else
+	//		cout << "at max - Next will exceed array size" << endl;
+	//	//cin.clear();
+	//	cout << "Enter an integer: " << endl;
+	//	cin.get();
+
+	//	for (int i = 0; i < 5; i++)
+	//	{
+	//		cout << nonD[i] << endl;
+	//	}
+	//}//end while
+
+	//Dynamic allocation example
+	//This program starts with a small array and increases its size
+	//by copy and creating - as memory allows
+
+	int max = 5;//note not a constant
+	int *dynArray = new int[max];
+	int c = 0;
+
+	cout << "enter an integer: " << endl;
+	while (cin >> dynArray[c])//reads into array at c and returns true
+	{
+		c++;
+		if (c >= max)//if array is full, make it larger
+		{
+			max = max * 2;
+			int *temp = new int[max];//create temp - size of new max
+			for (int i = 0; i < c; i++)
+			{
+				temp[i] = dynArray[i];//write original to temp
+			}
+			// delete original smaller array
+			//delete dynArray; //this leaks into memory
+			delete[]dynArray; //reminds it that dynArray is an array
+			dynArray = temp; //switch pointer to larger temp array
+		}//end if
+		
+		cout << "array size is: " << max << " " << max - c << " left" << endl;
+		cout << "enter another integer: " << endl;
+	}//end while
+
+	return 0;
+}//end main

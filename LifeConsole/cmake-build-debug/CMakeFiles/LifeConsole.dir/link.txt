@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/LifeConsole.dir/Life.cpp.o CMakeFiles/LifeConsole.dir/LifeConsole.cpp.o CMakeFiles/LifeConsole.dir/utility.cpp.o  -o LifeConsole 

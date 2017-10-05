@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testcmd.dir/main.cpp.o  -o testcmd 
