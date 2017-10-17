@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/leapyear.dir/main.cpp.o  -o leapyear 

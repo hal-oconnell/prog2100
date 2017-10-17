@@ -1,0 +1,4 @@
+/home/hal/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/hal/Projects/prog2100/leapyear-timed
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hal/Projects/prog2100/leapyear-timed/cmake-build-debug
